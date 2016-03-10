@@ -6,9 +6,11 @@ window.onload = function() {
     
     var hide = document.getElementsByClassName('hide_me');
 
-    for (var i = 0; i < hide.length; i++) {
-      hide[i].style.display = "none";
-    }
+    if (hide.style.display == "none"){
+      hide.style.display = "block";
+    else {
+      hide.style.display = "none";
+    
   });
   
 };

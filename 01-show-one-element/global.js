@@ -10,7 +10,7 @@ window.onload = function() {
 
     more_text.style.display = "inline";
 
-    more_link.style.display = "none";
+    click_it.style.display = "none";
   });
 
   // 1. Get the DOM element which will be clicked.
