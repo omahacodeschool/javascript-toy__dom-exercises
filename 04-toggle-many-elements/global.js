@@ -13,7 +13,7 @@ window.onload = function() {
         toggles[i].style.display = "inherit";
         click_on_it.innerHTML = "They're back!";
       }
-      else if (toggles[i].style.display == "inherit") {
+      else {
         toggles[i].style.display = "none";
         click_on_it.innerHTML = "Oh No! They're gone!";
       };
