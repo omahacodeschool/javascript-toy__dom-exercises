@@ -1,11 +1,16 @@
 window.onload = function() {
-  var current_text = document.getElementById("full_name")
 
-  var mirror = document.getElementById("greeting")
+  var current_text = document.getElementById("full_name");
 
-  var returnedText = function(){
-    for (var i = 0; i < current_text.length; i++) {
-    mirror.innerHTML = mirrored_text[i];
-    };
-  };
+  current_text.addEventListener("keyup", function() {
+    
+    var letters = current_text.value;
+
+    var mirrored_text = document.getElementById("greeting");
+    mirrored_text.innerHTML = "Greetings: " + letters;
+  });
+ 
+
+
+
 };
