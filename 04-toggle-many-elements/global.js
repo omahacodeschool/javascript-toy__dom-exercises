@@ -1,5 +1,4 @@
 
-
 window.onload = function() {
 
 //if use of the button is the triggering event, I need an event listener for the button. 
