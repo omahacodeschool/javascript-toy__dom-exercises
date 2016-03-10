@@ -7,7 +7,6 @@ window.onload = function() {
 
   click_on_it = document.getElementById("toggle_button");
 
-
   var hideThings = function(){
     for (var i = 0; i < hidden_length; i++) {
       if (toggles[i].style.display == "none") {
@@ -20,7 +19,5 @@ window.onload = function() {
   };
 
   click_on_it.addEventListener("click", hideThings);
-
-
 
 };
