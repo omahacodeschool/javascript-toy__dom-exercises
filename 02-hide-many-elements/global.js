@@ -9,6 +9,9 @@ window.onload = function() {
       hidden[i].style.display = "none";
     };
   };
-  
+
+  click_on_it = document.getElementById("button")
+  click_on_it.addEventListener("click", hideThings)
+
 
 };
