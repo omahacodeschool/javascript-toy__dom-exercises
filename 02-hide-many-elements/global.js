@@ -6,9 +6,9 @@ window.onload = function() {
 
   var element_to_hide = document.getElementsByClassName("hide_me");
     
-    element_to_hide.forEach(function(element) {
-      element.style.display = "none";
-    })
+    for (var i = 0; i < element_to_hide.length; i++) {
+      element_to_hide[i].style.display = "none";
+    }
   });
 
 };
