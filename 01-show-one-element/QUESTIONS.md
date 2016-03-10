@@ -11,7 +11,10 @@ The text is hidden again.  This is because the hidden text's initial inline styl
 ---
 
 > Remove `window.onload = function() {` (and the closing `}`) from **global.js**. Does the link still reveal the text? What is the purpose of this code that you've removed?
+ 
+Clicking the link does not reveal the text anymore.  The link simply shows as a hyperlink to #.  We also get the following error message in console Uncaught TypeError: Cannot read property 'addEventListener' of null(anonymous function) @ global.js:9.
 
+The purpose of the code we just removed is to implement the function when the page is loaded.
 
 
 ---

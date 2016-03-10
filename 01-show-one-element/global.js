@@ -1,4 +1,4 @@
-window.onload = function() {
+// window.onload = function() {
 
   // Here is some pseudo-code to help you get started:
 
@@ -20,4 +20,4 @@ window.onload = function() {
 
   });
 
-};
+// };
