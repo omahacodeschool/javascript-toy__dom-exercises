@@ -6,4 +6,4 @@ For some of the exercises, you'll be given starter HTML and/or JavaScript; but t
 
 Some of the exercises have an accompanying **QUESTIONS.md** file, which contains one or more questions about the exercise for you to answer.
 
-Begin with the [first exercise now](./01-show-one-element).
+Begin with the [first exercise now](./01-show-one-element). 
