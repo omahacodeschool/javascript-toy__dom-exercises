@@ -16,9 +16,8 @@ Clicking the link does not reveal the text anymore.  The link simply shows as a 
 
 The purpose of the code we just removed is to implement the function when the page is loaded.
 
-
 ---
 
 > Describe the "contract" for `addEventListener`.
 
-Your reply here...
+Listen for a click on DOM element "more_text_link".  Once clicked, first execute function that sets the variable 'text_to_show' equal to our document's id = "more_text_content". Then change the style of our document's element id = "more_text_content" from style="display: none" to style="display: inline".  Finally, take variable 'click_it' (which is element id="more_text_link") and set the link style="display: none".
