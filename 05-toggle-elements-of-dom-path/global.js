@@ -4,14 +4,14 @@ window.onload = function() {
 
   toggleButton.addEventListener("click", function() {  
 
-    var toggleDivs = document.querySelectorAll("ul.second_five li");
+    var toggleList = document.querySelectorAll("ul.second_five li");
 
-    for (var i = 0; i < toggleDivs.length; i ++) {
-      if (toggleDivs[i].style.display === "list-item") {
-        toggleDivs[i].style.display = "none"
+    for (var i = 0; i < toggleList.length; i ++) {
+      if (toggleList[i].style.display === "list-item") {
+        toggleList[i].style.display = "none"
       } 
       else {
-        toggleDivs[i].style.display = "list-item";        
+        toggleList[i].style.display = "list-item";        
       }
     }
   });
