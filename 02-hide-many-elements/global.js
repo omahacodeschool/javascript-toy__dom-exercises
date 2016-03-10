@@ -3,13 +3,15 @@ window.onload = function() {
   // Here is some pseudo-code to help you get started:
 
   // 1. Get the DOM element which will be clicked.
-  var text_to_hide = document.getElementsByClassName("hide_me")
+  var hide_button = document.getElementById("button");
+
+  var text = document.getElementByClass("hide_me")
 
   // 2. Add a listener for the 'click' event onto that element.
-  text_to_hide.addEventListener("click",function code);
+  hide_button.addEventListener("click",text.hide);
     
     // 3. The block for the listener should get the DOM
-    //    element containing the text to reveal.
+    //    element containing the text to hide.
     
 
       
@@ -23,6 +25,12 @@ window.onload = function() {
 };
 
 
-function(){
+ruby method
 
-};
+def hide_text
+  texts = Element.where(Class = "hide_me")
+  texts.each do |text|
+    text.hide
+  end
+
+end
