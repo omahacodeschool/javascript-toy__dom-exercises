@@ -8,11 +8,13 @@ window.onload = function() {
 
   // 3. The block for the listener should get the DOM
   //    element containing the text to hide.
-    var text_to_hide = document.getElementsByClassName("hide_me");
+    var divs_to_hide = document.getElementsByClassName("hide_me");
 
   // 4. Modify that DOM element's style to change it's 'display'
   //    from a shown value to a hidden value.
-    text_to_hide.style.display = "none";
+    for (var i = 0; i < divs_to_hide.length; i++) {
+      divs_to_hide[i].style.display = "none";
+    }
 
   });
 
