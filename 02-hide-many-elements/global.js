@@ -1,20 +1,16 @@
 window.onload = function() {
 
-  var hideButton = document.getElementById("button");
+  var hideButton = document.getElementById('button');
 
-  hideButton.addEventListener("click", function{
+  hideButton.addEventListener("click", function() {
     
-    var hide = document.getElementsByClassName("hide_me");
+    var hide = document.getElementsByClassName('hide_me');
 
-    if (hide.style.display == "none") {
-      hide.style.display = "block";
+    for (var i = 0; i < hide.length; i++) {
+      hide[i].style.display = "none";
     }
-    else {
-      hide.style.display = "none";
-    }
-  
-
   });
-
+  
 };
+
 
