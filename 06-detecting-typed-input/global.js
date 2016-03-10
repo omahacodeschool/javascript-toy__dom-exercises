@@ -2,7 +2,7 @@ window.onload = function() {
 
   var nameInput= document.getElementById('full_name');
 
-  nameInput.addEventListener("keyup", function() {
+  nameInput.addEventListener("input", function() {
 
     var greeting = document.getElementById("greeting");
 
