@@ -9,7 +9,7 @@ var click_it = document.getElementById('button');
   // 3. The block for the listener should get the DOM
   //    element containing the text to reveal.
 button.addEventListener("click", function(){ 
-  var divs_to_toggle = document.getElementByClassName('toggle_me');
+  var divs_to_toggle = document.getElementsByClassName('toggle_me');
 
 for (var n = 0; n < divs_to_toggle.length; n++){
   if (divs_to_toggle[n].style.display === "none") {
