@@ -2,10 +2,19 @@ window.onload = function() {
 
   // Here is some pseudo-code to help you get started:
 
+  var click_it = document.getElementById("more_text_link");
+
+  click_it.addEventListener("click", function(){
+
+    var more_text = document.getElementById("more_text_content");
+
+    more_text.style.display = "inline";
+
+    more_link.style.display = "none";
+  });
+
   // 1. Get the DOM element which will be clicked.
-
-  // 2. Add a listener for the 'click' event onto that element.
-
+   // 2. Add a listener for the 'click' event onto that element.
   // 3. The block for the listener should get the DOM
   //    element containing the text to reveal.
 
