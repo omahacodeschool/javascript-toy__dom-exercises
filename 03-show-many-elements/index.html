@@ -1,28 +1,23 @@
 <!doctype html>
 <html>
 <head>
-  <title>DOM Atomic 02</title>
+  <title>DOM Atomic 03</title>
   <script type="text/javascript" src="show.js"></script>
 </head>
 <body>
 
-  <p>
-    <div class="shown">
-      I have the class "show_me", and will stick around even after you click the button at the bottom.
-    </div>
+  <div class="shown" >
+    I have the class "show_me", and will stick around even after you click the button at the bottom.
+  </div>
 
-    <button id="button">Show</button>
+  <div class="show_me" style="display: none">
+    I have the class "hide_me"; I should disappear when you click the button at the bottom.
+  </div>
 
-    <span id="show_me" style="display: none">
-      <div>
-        I have the class "hide_me"; I should disappear when you click the button at the bottom.
-      </div>
+  <div class="show_me" style="display: none">
+    I'm also part of the "hide_me" class, and should also disappear.
+  </div>
 
-      <div>
-        I'm also part of the "hide_me" class, and should also disappear.
-      </div>
-
-    </span>
-  </p>
+  <button id="button">Reveal</button>
 </body>
 </html>

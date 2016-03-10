@@ -1,14 +1,16 @@
 window.onload = function() {
 
-//Show Button 
-var showButton = document.getElementById("button");
+  //Show Button 
+  var showButton = document.getElementById('button');
 
-  showButton.addEventListener("click", function(){
+    showButton.addEventListener("click", function(){
 
-  var show = document.getElementById("show_me");
+    var show = document.getElementsByClassName('show_me');
 
-  show.style.display = "block";
-  showButton.style.display = "none";
+    for (var i = 0; i < show.length; i++); {
+      show[i].style.display = "block";
+    }
   });
 
 };
+

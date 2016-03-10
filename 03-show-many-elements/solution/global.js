@@ -2,7 +2,7 @@ window.onload = function() {
 
   var button = document.getElementById('button');
 
-  button.addEventListener("click", function() {
+    button.addEventListener("click", function(){
 
     var divs_to_show = document.getElementsByClassName('show_me');
 
