@@ -1,39 +1,38 @@
-window.onload = function() {
+window.onload = function() {;
 
-var numBox1 = document.getElementById("first")
+  var numBox1 = document.getElementById("first");
 
-var numBox2 = document.getElementById("second")
+  var numBox2 = document.getElementById("second");
 
-var numBox3 = document.getElementById("third")
+  var numBox3 = document.getElementById("third");
 
-var inputFields = document.querySelectorAll("input")
+  inputFields = [numBox1, numBox2, numBox3];
 
-var i = 0
+  var i = 0;
 
-debugger;
+  // Function moves the focus from one text field to the next.
+  function switchInputField(){;
+    i++;
+    inputFields[i].focus();
+  };
 
-//Check the value of the text box, and count length. 
-numBox1.addEventListener("keyup", function() {
-  
-  var box1Value = numBox1.value 
+  numBox1.addEventListener("keyup", function() {;
+    i = 0;
+    if(numBox1.value.length == 3){;
+      switchInputField();
+      };
+    });
 
-  if(box1Value.length == 3){
-    switchInputField()
-    //DO THAT THING WHERE IT TABS.
-    // next("inputs")  ?
-  }
-  else{
-    //DO NOTHING
-  } 
-})
-function switchInputField(){
-  i++
-  inputFields[i]
+  numBox2.addEventListener("keyup", function() {;
+    i = 1;
+    if(numBox2.value.length == 3){;
+      switchInputField();
+      };
+    });
 
-  
-
-}
-
-
-
-}
+  numBox3.addEventListener("keyup", function() {;
+    i = 2;
+    if(numBox3.value.length == 4){;
+      };
+    });
+};
