@@ -6,16 +6,16 @@ window.onload = function() {
 
   numArr = [numOne, numTwo, numThree];
 
-  numArr.forEach(function(n) {
-    n.addEventListener("keyup", function() {
-      inputNums = n.value.length;
-      maxNums   = parseInt(n.getAttribute("maxlength"));
+  for (var i = 0; i < numArr.length; i++) {
+    numArr[i].addEventListener("keyup", function() {
+      inputNums = numArr[i].value.length;
+      maxNums   = parseInt(numArr[i].getAttribute("maxlength"));
 
       if (inputNums === maxNums) {
-        n[n + 1].focus();
+        numArr[i + 1].focus();
       }
     });   
-  });
+  };
   // })
 
 
