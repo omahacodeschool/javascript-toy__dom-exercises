@@ -5,5 +5,4 @@
 ---
 
 > What are some refactoring techniques you might apply to the provided solution?
-
-Your reply here...
+Please see my code for a possible alernative.
