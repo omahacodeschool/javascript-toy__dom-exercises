@@ -6,4 +6,4 @@
 
 > How did you go about hiding elements initially?
 
-Your reply here...
+Pretty simply, within their tag I added the style attribute and set it to display:none.
