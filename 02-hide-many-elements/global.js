@@ -2,11 +2,10 @@ window.onload = function() {
 
     var my_function = function(){
     texts = document.getElementsByClassName("hide_me");
-    var i = 0;
-    if (texts.length > i) {
-      texts.style.display = "none";
+    for (var counter = 0; counter < texts.length; counter = counter + 1)
+      texts[counter].style.display = "none";
     }
-  }
+  
 
   // Here is some pseudo-code to help you get started:
 
