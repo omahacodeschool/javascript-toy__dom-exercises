@@ -18,15 +18,4 @@ window.onload = function() {
       }
     });   
   };
-  // })
-
-
-  // numTwo.addEventListener("keyup", function() {
-  //   inputNums = numTwo.value.length;
-  //   maxNums   = parseInt(numTwo.getAttribute("maxlength"));
-
-  //   if (inputNums === maxNums) {
-  //     numThree.focus();
-  //   }
-  // });
 };
