@@ -1,19 +1,20 @@
 window.onload = function() {
 
 
-  var button = getElementById("button");
+  var button = document.getElementById("button");
 
   button.addEventListener("click", function(){
 
-    var toggle = getElementsByClassName("toggle_me");
+    var toggle = document.getElementsByClassName("toggle_me");
 
-    if (toogle.style.display == "none" ){
-      toggle.style.display = "block"; 
-    } else {
-      toggle.style.display == "none";
+    for (var i = 0; i < toggle.length; i++) {
+      if (toggle[i].style.display === "none") {
+      toggle[i].style.display = "block";
+      } 
+      else { 
+      toggle[i].style.display = "none";
+      }
     }
-
   });
-  
 };
 
