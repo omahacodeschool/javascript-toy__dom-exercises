@@ -9,8 +9,4 @@ window.onload = function() {
     var mirrored_text = document.getElementById("greeting");
     mirrored_text.innerHTML = "Greetings: " + letters;
   });
- 
-
-
-
 };
