@@ -10,7 +10,7 @@ window.onload = function() {
   
   var click_it = document.getElementById("toggle_button");
 
-  click_it.addEventListener("click", function(){
+  click_it.onclick = function(){
 
 
     for(var i=0; i < toggledElements.length; i++){
@@ -18,6 +18,16 @@ window.onload = function() {
       el.style.display = (el.style.display != 'none' ? 'none' : '' );
 
         }
-    });
+    };
+
+  // click_it.addEventListener("click", function(){
+
+
+  //   for(var i=0; i < toggledElements.length; i++){
+  //     var el = toggledElements[i];
+  //     el.style.display = (el.style.display != 'none' ? 'none' : '' );
+
+  //       }
+  //   });
   
 };
