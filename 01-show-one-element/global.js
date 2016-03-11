@@ -1,5 +1,5 @@
 window.onload = function() {
-
+ 
   // Here is some pseudo-code to help you get started:
 
   // 1. Get the DOM element which will be clicked.
