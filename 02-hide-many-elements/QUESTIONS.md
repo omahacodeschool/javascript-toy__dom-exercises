@@ -6,16 +6,10 @@
 
 > How did you go about selecting the DOM elements to hide? Describe the "contract" for that function.
 
-Honestly, I am trying to understand this stuff but just ended up copy/pasting the solution in to see how it works. Obviously, though, the ones with class "hide_me" are the ones that needed hidden.
+The DOM elements to hide are those with the class name hide_me. This is done by retrieving them by their class name: document.getElementsByClassName('hide_me');. I'm not quite sure if this is the right description of the contract, but I know that a class is a shared marker for a group of elements and retrieving something by a class name is a way to get a collection of all of those elements together.
 
 ---
 
 > Describe how you were able to hide each element. Were you able to do it as one operation, or did you use a loop of some kind? Describe the "contracts" that were utilized to accomplish your goal.
 
-I was not able to do this on my own. I understand everything up until this:
-
-    for (var i = 0; i < divs_to_hide.length; i++) {
-      divs_to_hide[i].style.display = "none";
-    }
-
-How does arithmetic have anything to do with hiding something or not? I thought it was just, like, "this has class 'hide_me' so hide it. I don't get this code AT. ALL. I watched the videos, I watched them again... if it's in there I missed it. I guess learning JS is going to be every bit as painful as learning Ruby. Yay.
+The solution code that I ended up using hides elements by first retrieving them by their hide_me class name, then looping through that collection incrementally and changing the elements' display values to "none" (which makes them not visible to the user). This block of code is inside the listener function. The addEventListener method "contract" dictates that it requires two pieces of information in order to work: 1)type (a type of event to listen for, such as a user click); 2) listener (this is the object that receives notfication when the specified type of event occurs which, in this case, triggers the block of code that finds all the hide_me class elements and changes their display values to "none.") 
