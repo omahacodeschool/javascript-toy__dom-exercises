@@ -7,12 +7,14 @@ window.onload = function() {
   numArr = [numOne, numTwo, numThree];
 
   for (var i = 0; i < numArr.length; i++) {
-    numArr[i].addEventListener("keyup", function() {
-      inputNums = numArr[i].value.length;
-      maxNums   = parseInt(numArr[i].getAttribute("maxlength"));
+    numArr[i].addEventListener("keyup", function(event) {
+      inputNums = event.target.value.length;
+      maxNums   = parseInt(event.target.getAttribute("maxlength"));
 
       if (inputNums === maxNums) {
-        numArr[i + 1].focus();
+        nextElement = event.target.nextElementSibling
+        nextElement.focus();
+        console.log("foo")
       }
     });   
   };
