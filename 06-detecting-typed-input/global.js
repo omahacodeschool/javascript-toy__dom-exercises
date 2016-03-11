@@ -1,1 +1,4 @@
-// Your JavaScript goes here.
+window.onload = function() {
+
+  
+};
