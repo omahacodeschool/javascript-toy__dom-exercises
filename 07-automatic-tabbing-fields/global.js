@@ -4,21 +4,27 @@ window.onload = function() {
   var numTwo   = document.getElementById("second")
   var numThree = document.getElementById("third")
 
-  numOne.addEventListener("keyup", function() {
-    inputNums = numOne.value.length;
-    maxNums   = parseInt(numOne.getAttribute("maxlength"));
+  numArr = [numOne, numTwo, numThree];
 
-    if (inputNums === maxNums) {
-      numTwo.focus();
-    }
+  numArr.forEach(function(n) {
+    n.addEventListener("keyup", function() {
+      inputNums = n.value.length;
+      maxNums   = parseInt(n.getAttribute("maxlength"));
+
+      if (inputNums === maxNums) {
+        n[n + 1].focus();
+      }
+    });   
   });
+  // })
 
-  numTwo.addEventListener("keyup", function() {
-    inputNums = numTwo.value.length;
-    maxNums   = parseInt(numTwo.getAttribute("maxlength"));
 
-    if (inputNums === maxNums) {
-      numThree.focus();
-    }
-  });
+  // numTwo.addEventListener("keyup", function() {
+  //   inputNums = numTwo.value.length;
+  //   maxNums   = parseInt(numTwo.getAttribute("maxlength"));
+
+  //   if (inputNums === maxNums) {
+  //     numThree.focus();
+  //   }
+  // });
 };

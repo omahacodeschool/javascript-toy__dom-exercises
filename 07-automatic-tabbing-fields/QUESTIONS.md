@@ -6,3 +6,4 @@
 
 > What are some refactoring techniques you might apply to the provided solution?
 
+I'm thinking that this could be refactored using a 'forEach' loop to cutdown on reptition.
