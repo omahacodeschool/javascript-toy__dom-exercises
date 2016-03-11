@@ -6,4 +6,4 @@
 
 > How did you go about hiding elements initially?
 
-Your reply here...
+added a style element to each div and set it to "display: none" initially.
