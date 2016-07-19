@@ -3,10 +3,10 @@ window.addEventListener("load", function() {
 	//define the DOM element that will be clicked on
 	var button = document.getElementById('toggle_button');
 
-	//define variables for the elements to hide
+	//define variables for the elements to hide. The querySelectorAll searches for a ul element with the "second_five" class, and then makes an array out of the list items inside the ul.
 	var secondFive = document.querySelectorAll('ul.second_five li');
-	//define function that will hide those objects
 
+	//define function that will hide those objects
 	var toggle = function() {
 		if (secondFive[0].style.display == "none") {
 			for (var i = secondFive.length - 1; i >= 0; i--) {
