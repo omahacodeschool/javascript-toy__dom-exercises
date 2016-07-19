@@ -7,11 +7,11 @@ window.addEventListener("load", function(){
     var movieList = document.querySelectorAll("ul.second_five li");
 
     for (var i = 0; i < movieList.length; i++) {
-      if (movieList[i].style.display === "list-item") {
-        movieList[i].style.display = "none";
+      if (movieList[i].style.display === "none") {
+        movieList[i].style.display = "list-item";
       }
       else {
-        movieList[i].style.display = "list-item";
+        movieList[i].style.display = "none";
       }
     }
 
