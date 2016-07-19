@@ -4,7 +4,7 @@ window.addEventListener("load", function(){
   var moreText = document.getElementById("more_text_content");  // 3. The block for the listener should get the DOM element containing the text to reveal.
 
   var expandLink = function (){
-  	moreText.style.display = "block";  // 4. Modify that DOM element's style to change it's 'display' from a hidden value to a shown value.
+  	moreText.style.display = "inline";  // 4. Modify that DOM element's style to change it's 'display' from a hidden value to a shown value.
   	moreLink.style.display = "none";  // 5. Also modify the DOM to hide the "More info..." link.
   };
 

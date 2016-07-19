@@ -18,4 +18,4 @@ The link does not work. That first event listener loads the original state of th
 
 > Describe the "contract" for `addEventListener`.
 
-Your reply here...
+The "contract" for addEventListener is the action (click, load, mousedown, etc), and the function to execute on that action.
