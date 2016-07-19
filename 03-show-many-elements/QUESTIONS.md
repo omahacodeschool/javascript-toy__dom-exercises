@@ -6,4 +6,4 @@
 
 > How did you go about hiding elements initially?
 
-Your reply here...
+I set up a loop that sets the elements' displays to "none" and then have them switch to "block" when the button is clicked.
