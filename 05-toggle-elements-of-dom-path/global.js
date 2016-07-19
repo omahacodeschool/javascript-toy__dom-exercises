@@ -4,20 +4,18 @@ window.addEventListener("load", function() {
 	var button = document.getElementById('toggle_button');
 
 	//define variables for the elements to hide
-	var secondFive = document.querySelectorAll('ul.second_five');
-	var secondList = secondFive.getElementsByTagName('li');
+	var secondFive = document.querySelectorAll('ul.second_five li');
 	//define function that will hide those objects
 
 	var toggle = function() {
-		debugger;
-		if (secondList[0].style.display == "none") {
-			for (var i = secondList.length - 1; i >= 0; i--) {
-				secondList[i].style.display = "block";}
+		if (secondFive[0].style.display == "none") {
+			for (var i = secondFive.length - 1; i >= 0; i--) {
+				secondFive[i].style.display = "block";}
 		}
 
-		else if (secondList[0].style.display == "block") {
-			for (var i = secondList.length - 1; i >= 0; i--) {
-				secondList[i].style.display = "none";}
+		else if (secondFive[0].style.display == "block") {
+			for (var i = secondFive.length - 1; i >= 0; i--) {
+				secondFive[i].style.display = "none";}
 		}
 	};
 
