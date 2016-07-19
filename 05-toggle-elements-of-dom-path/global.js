@@ -10,10 +10,10 @@ window.addEventListener("load", function() {
 	var toggle = function() {
 		if (secondFive[0].style.display == "none") {
 			for (var i = secondFive.length - 1; i >= 0; i--) {
-				secondFive[i].style.display = "block";}
+				secondFive[i].style.display = "list-item";}
 		}
 
-		else if (secondFive[0].style.display == "block") {
+		else if (secondFive[0].style.display == "list-item") {
 			for (var i = secondFive.length - 1; i >= 0; i--) {
 				secondFive[i].style.display = "none";}
 		}
