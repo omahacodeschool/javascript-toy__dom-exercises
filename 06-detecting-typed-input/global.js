@@ -1,12 +1,10 @@
 window.addEventListener("load", function(){
+	
+	var fullName = document.getElementById("full_name");
+	var greeting = document.getElementById("greeting");
 
-  var yourName = document.getElementById('full_name');
+	fullName.addEventListener("keyup", function(){
 
-  yourName.addEventListener("keyup", function(){
-
-    var greeting = document.getElementById("greeting");
-
-    greeting.innerHTML = ("Welcome, " + yourName.value + "!")
-  });
-  
+		greeting.innerHTML = ("Hiya, " + fullName.value + "!");
+	});
 });
